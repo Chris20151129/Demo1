@@ -1,0 +1,79 @@
+﻿<!--
+*
+* 陈松 --练手小Demo
+* Version 0.0.1
+*
+-->
+
+<!DOCTYPE html>
+<html ng-app="CS">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- 页面标题在 pageTitle 指令中设置 -->
+    <title page-title></title>
+
+    <!-- Bootstrap -->
+    <link href="CSS/bootstrap.css" rel="stylesheet" />
+
+    <!-- Font awesome -->
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+
+    <!-- Animate -->
+    <link href="Content/animate.css" rel="stylesheet" />
+
+    <!-- 项目级样式表 -->
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="Content/CsStyle.css" rel="stylesheet" />
+
+</head>
+
+<!-- 主控制器 -->
+<body id="page">
+
+    <!-- 主视图  -->
+    <div ui-view></div>
+
+    <!-- jQuery -->
+    <script src="Scripts/Jquery/jquery-3.1.1.js"></script>
+    <script src="Scripts/Jquery/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/es5-shim/es5-sham.js"></script>
+    <script src="Scripts/es5-shim/es5-shim.js"></script>
+    <!-- Singalr -->
+    <script src="Scripts/jquery.signalR-2.2.2.js"></script>
+    <script src="signalr/hubs"></script>
+
+    <!-- Bootstrap -->
+    <script src="Scripts/bootstrap.js"></script>
+
+    <!-- MetsiMenu 菜单插件-->
+    <script src="Scripts/Jquery/jquery.metisMenu.js"></script>
+
+    <!-- SlimScroll 滚动条插件-->
+    <script src="Scripts/Jquery/jquery.slimscroll.js"></script>
+
+
+    <!-- AngularJS -->
+    <script src="Scripts/angular/angular.js"></script>
+    <script src="Scripts/angular/angular-sanitize.js"></script>
+    <script src="Scripts/angular/ocLazyLoad.js"></script>
+    <script src="Scripts/angular/angular-translate.min.js"></script>
+    <script src="Scripts/angular/angular-ui-router.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    <script src="Scripts/angular-idle.js"></script>
+
+    <!-- 百度地图 -->
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=raKPbGpD5tYvIjZrEzL9HYytDa1727mG"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+    <script src="SDXK/sdxk-baidu-map.js"></script>-->
+
+    <!-- JS脚本 -->
+    <script src="Controller/app.js"></script>
+    <script src="Controller/config.js"></script>
+    <!--<script src="Controller/translations.js"></script>-->
+    <script src="Controller/controllers.js"></script>
+    <script src="Controller/directives.js"></script>
+
+</body>
+</html>

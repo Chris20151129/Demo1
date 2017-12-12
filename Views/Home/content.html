@@ -1,0 +1,15 @@
+﻿<div id="wrapper" style="height:100%">
+    <!--左侧菜单-->
+    <div ng-include="'Views/Home/Menu_New.html'"></div>
+
+    <div id="page-wrapper" class="gray-bg">
+
+        <!-- 顶部菜单 -->
+        <div ng-include="'Views/Home/Header.html'"></div>
+
+        <!-- 主视图  -->
+        <div ui-view class="animated fadeInRight" style="padding:15px 0"></div>
+
+    </div>
+</div>
+<!-- End wrapper-->

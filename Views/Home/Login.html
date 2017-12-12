@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="../../Content/login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="form-bg animated fadeInDown" ng-controller="LoginCtrl">
+        <div class="container" ng-init="Init()">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-5">
+                    <form class="form-horizontal" name="loginForm" ng-submit="Login()">
+                        <span class="heading">用户登录</span>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="obj.userName" placeholder="用户名:admin">
+                            <i class="glyphicon glyphicon-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" ng-model="userPwd" placeholder="密 码:1">
+                            <i class="glyphicon glyphicon-lock"></i>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">登录</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse" ng-controller="MenuCtrl" ng-init="Init()">
+        <ul side-navigation class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="profile-element" uib-dropdown>
+                    <a href="#" style="font-size:larger"><b>CS小框架</b></a>
+                </div>
+                <div class="logo-element">
+                    CS
+                </div>
+            </li>
+            <li ng-class="{active: $state.includes('Window')}">
+                <a href="javascript:void(0)">
+                    <i class="fa fa-diamond"></i>
+                    <span class="nav-label">首页</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level" ng-class="{in: $state.includes('Window')}">
+                    <li ui-sref-active="active"><a ui-sref="Window.Window1"><i class="fa fa-circle-o"></i> 首页1</a></li>
+                    <li ui-sref-active="active" ng-click="btn()"><a ui-sref="Window.Window2"><i class="fa fa-circle-o"></i> 首页2</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('Button')}">
+                <a href="javascript:void(0)">
+                    <i class="glyphicon glyphicon-text-color"></i>
+                    <span class="nav-label">按钮组</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level" ng-class="{in: $state.includes('Button')}">
+                    <li ui-sref-active="active"><a ui-sref="Button.LoadButton"><i class="fa fa-circle-o"></i> 加载按钮</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('Window')}">
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('Window')}">
+                    <li ui-sref-active="active"><a ui-sref="Window.Window2">Window2</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</nav>

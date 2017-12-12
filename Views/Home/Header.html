@@ -1,0 +1,42 @@
+﻿<div class="row border-bottom" ng-controller="HeaderCtrl" ng-init="Init()">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button class="btn btn-primary" style="margin:10px" ng-click="open()"><span class="fa fa-bars"></span></button>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:void(0);" id="user">欢迎 {{USER}}！</a></li>
+            <li><button class="btn btn-primary fa fa-envelope dropdown-toggle" style="line-height:20px;margin:10px 10px;" id="dropdownMenu1" data-toggle="dropdown" ></button>
+            <ul id="roomList" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <!--<li>111111 <button onclick="ChartStart(12)">chart</button></li>-->
+            </ul>
+            </li>
+            <li><a href="#" id="logout">退出</a></li>
+        </ul>
+        <!--<ul ng-show="false" id="{{ID}}" roomname="{{ID}}"></ul>-->
+    </nav>
+    
+    <!-- 聊天窗口模态框 -->
+    <div class="modal fade" id="Chart" tabindex="-1" role="dialog" data-backdrop="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" ng-click="Cannal()"><span>&times;</span></button>
+                    <h4 class="modal-title">{{NAME}}</h4>
+                </div>
+                <div class="modal-body" style="height:300px" id="{{ID}}" roomname="{{ID}}">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="modal-footer" style="padding:0px;height:90px">
+                        <textarea class="form-control" style="border:0px" ng-model="message"></textarea>
+                    <div class="form-group pull-right">
+                        <button class="btn btn-primary" ng-click="Cannal()">关闭</button>
+                        <button class="btn btn-primary" ng-click="SendMessage()">发送</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

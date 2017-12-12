@@ -1,0 +1,63 @@
+﻿<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse" ng-controller="MenuCtrl" ng-init="Init()">
+        <ul side-navigation class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="profile-element" uib-dropdown>
+                   <img src="../../Img/head/Head_Picture.png" class="sm-head" />
+                    <div class="sm-title">
+                        <abbr title="前端开发工程师">Chris</abbr>
+                    </div>
+                </div>
+                <div class="logo-element">
+                    CS
+                </div>
+            </li>
+            <li ng-class="{active: $state.includes('Window')}">
+                <a href="javascript:void(0)">
+                    <i class="fa fa-diamond"></i>
+                    <span class="nav-label">首页</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('Window')}">
+                    <li ui-sref-active="active"><a ui-sref="Window.Window1"><i class="fa fa-circle-o"></i> 首页1</a></li>
+                    <li ui-sref-active="active"><a ui-sref="Window.Window2"><i class="fa fa-circle-o"></i> 首页2</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('Button')}">
+                <a href="javascript:void(0)">
+                    <i class="glyphicon glyphicon-text-color"></i>
+                    <span class="nav-label">按钮组</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('Button')}">
+                    <li ui-sref-active="active"><a ui-sref="Button.LoadButton"><i class="fa fa-circle-o"></i> 加载按钮</a></li>
+                    <li ui-sref-active="active"><a ui-sref="Button.MenuButton"><i class="fa fa-circle-o"></i> 下拉菜单</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('Canvas')}">
+                <a href="javascript:void(0)">
+                    <i class="fa fa-table"></i>
+                    <span class="nav-label">画布</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('Canvas')}">
+                    <li ui-sref-active="active"><a ui-sref="Canvas.Canvas_base"><i class="fa fa-circle-o"></i> 基础画布</a></li>
+                    <li ui-sref-active="active"><a ui-sref="Canvas.Canvas_base1"><i class="fa fa-circle-o"></i> 画布七巧板</a></li>
+                    <li ui-sref-active="active"><a ui-sref="Canvas.Canvas_3D"><i class="fa fa-circle-o"></i> 3D效果</a></li>
+                    <li ui-sref-active="active"><a ui-sref="Canvas.flot"><i class="fa fa-circle-o"></i> 柱状图</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('layer')}">
+                <a href="javascript:void(0)">
+                    <i class="fa fa-table"></i>
+                    <span class="nav-label">弹窗</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('layer')}">
+                    <li ui-sref-active="active"><a ui-sref="layer.layer1"><i class="fa fa-circle-o"></i> layer弹窗</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</nav>
